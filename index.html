@@ -27,7 +27,9 @@
             >Web<span class="studio">Studio</span></a
           >
           <ul class="list studio_list">
-            <li><a href="./index.html" class="astudio link current">Studio</a></li>
+            <li>
+              <a href="./index.html" class="astudio link current">Studio</a>
+            </li>
             <li>
               <a href="./portfolio.html" class="astudio link">Portfolio</a>
             </li>
@@ -380,94 +382,105 @@
           <ul class="footer_list">
             <li class="footer_list_item">
               <a href="" class="footer_list_link">
-              <svg class="footer_list_icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-instagram-2-1"></use>
-              </svg>
-            </a>
+                <svg class="footer_list_icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-2-1"></use>
+                </svg>
+              </a>
             </li>
             <li class="footer_list_item">
               <a href="" class="footer_list_link">
-              <svg class="footer_list_icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-twitter-1-1"></use>
-              </svg>
-            </a>
+                <svg class="footer_list_icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-1-1"></use>
+                </svg>
+              </a>
             </li>
             <li class="footer_list_item">
               <a href="" class="footer_list_link">
-              <svg class="footer_list_icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-facebook-1"></use>
-              </svg>
-            </a>
+                <svg class="footer_list_icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
             </li>
             <li class="footer_list_item">
               <a href="" class="footer_list_link">
-              <svg class="footer_list_icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-linkedin-1"></use>
-              </svg>
-            </a>
+                <svg class="footer_list_icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
         <div class="form_container">
           <p class="form_paragraph">Subscribe</p>
           <form class="form">
-          <label class="form-label">
-          <input name="email" type="email" placeholder="email" class="form-input">
-          </label>
-          <button type="submit" class="form-button">
-           Subscribe
-           <svg class="form_icon" width="24" height="24">
-             <use href=""></use>
-           </svg>
-          </button>
+            <div  class="form_elements_container">
+            <label class="form-label">
+              <input
+                name="email"
+                type="email"
+                placeholder="email"
+                class="form-input"
+              />
+            </label>
+            <button type="submit" class="form-button">
+              Subscribe <svg class="form_icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-Frame-3-1"></use>
+              </svg>
+            </button>
+          </div>
           </form>
-         </div>
+        </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal >
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
           <svg class="modal-btn_icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black-18dp-2-1-1"></use>
           </svg>
         </button>
-        <form class="form" name="issue_report_form" autocomplete="off">
-          <label class="form-label">
-            Name
-            <input
-              class="form-input"
-              type="text"
-              name="name"            
-            />
-          </label>
-          <label class="form-label">
-            Phone
-            <input
-              class="form-input"
-              type="text"
-              name="phone"
-            />
-          </label>
-          <label class="form-label">
-            Email
-            <input
-              class="form-input"
-              type="text"
-              name="email"
-            />
-          </label>
-          <label class="form-label">
-            Comment
-            <input
-              class="form-input"
-              type="text"
-              name="comment"
-              placeholder="Text input"
-            />
-          </label>
-        
-          <button class="form-button" type="submit">Send</button>
-        </form>
+        <div class="modal_container">
+          <p class="modal_paragraph">
+            Leave your contacts and we will call you back
+          </p>
+          <form class="modal_form" name="contacts" autocomplete="off">
+            <div class="modal-field">
+            <label class="modal-label" for="">Name</label>
+            <div class="modal-input-wrap">
+            <svg class="modal-input-icon" width="" height="">
+              <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+            </svg>
+            <input class="modal-input" type="text"/>
+          </div>
+          </div>
+           <div class="modal-field">
+          <label class="modal-label" for="" >Phone</label>
+          <div class="modal-input-wrap">
+          <svg class="modal-input-icon" width="" height="">
+            <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+          </svg>
+            <input class="modal-input" type="text"/>
+          </div>
+          </div>
+           <div class="modal-field">
+            <label class="modal-label" for="">Email</label>
+           <div class="modal-input-wrap">
+            <svg class="modal-input-icon" width="" height="">
+              <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+            </svg>
+            <input class="modal-input" type="text"/>
+          </div>
+          </div>
+          <div>
+            <label class="modal-label" for="">Comment</label>
+            <textarea class="modal-textarea" name="user_comment" placeholder="Text input">Comment</textarea>
+          </div>
+          <div class="modal-checkbox">
+            <input class="modal-checkbox-input" type="checkbox"/>
+            <label class="modal-checkbox-label">I accept the terms and conditions of the Privacy Policy</label>
+          </div>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
