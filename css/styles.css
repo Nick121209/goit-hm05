@@ -773,11 +773,11 @@ button {
 
 .form_elements_container{display: flex; align-items: center; gap: 16px; justify-content: center}
 
-.modal-label{font-size: 12px; font-weight: 400; line-height: 1.2; display: block; margin-bottom: 4px;}
+.modal-label{font-size: 12px; font-weight: 400; line-height: 1.2; display: block; margin-bottom: 4px; line-height: 1.17; letter-spacing:0.04em; color:var(--customers_link-color)}
 
 .modal-input{border: 1px solid var(--primary-color); border-radius: 4px;}
 
-.modal-field{margin-bottom:18px;}
+.modal-field{margin-bottom: 8px;}
 
 .form_icon{fill: var(--white-color)}
 
