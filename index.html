@@ -413,7 +413,6 @@
         <div class="form_container">
           <p class="form_paragraph">Subscribe</p>
           <form class="form">
-            <div  class="form_elements_container">
             <label class="form-label">
               <input
                 name="email"
@@ -423,11 +422,11 @@
               />
             </label>
             <button type="submit" class="form-button">
-              Subscribe <svg class="form_icon" width="24" height="24">
+              Subscribe
+              <svg class="form_icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-Frame-3-1"></use>
               </svg>
             </button>
-          </div>
           </form>
         </div>
       </div>
@@ -439,48 +438,54 @@
             <use href="./images/icons.svg#icon-close-black-18dp-2-1-1"></use>
           </svg>
         </button>
-        <div class="modal_container">
-          <p class="modal_paragraph">
-            Leave your contacts and we will call you back
-          </p>
-          <form class="modal_form" name="contacts" autocomplete="off">
-            <div class="modal-field">
+        <p class="modal_paragraph">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="modal_form" name="contacts" autocomplete="off">
+          <div class="modal-field">
             <label class="modal-label" for="">Name</label>
             <div class="modal-input-wrap">
-            <svg class="modal-input-icon" width="" height="">
-              <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
-            </svg>
-            <input class="modal-input" type="text"/>
+              <svg class="modal-input-icon" width="" height="">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+              </svg>
+              <input class="modal-input" type="text" />
+            </div>
           </div>
+          <div class="modal-field">
+            <label class="modal-label" for="">Phone</label>
+            <div class="modal-input-wrap">
+              <svg class="modal-input-icon" width="" height="">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+              <input class="modal-input" type="text" />
+            </div>
           </div>
-           <div class="modal-field">
-          <label class="modal-label" for="" >Phone</label>
-          <div class="modal-input-wrap">
-          <svg class="modal-input-icon" width="" height="">
-            <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
-          </svg>
-            <input class="modal-input" type="text"/>
-          </div>
-          </div>
-           <div class="modal-field">
+          <div class="modal-field">
             <label class="modal-label" for="">Email</label>
-           <div class="modal-input-wrap">
-            <svg class="modal-input-icon" width="" height="">
-              <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
-            </svg>
-            <input class="modal-input" type="text"/>
-          </div>
+            <div class="modal-input-wrap">
+              <svg class="modal-input-icon" width="" height="">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+              <input class="modal-input" type="text" />
+            </div>
           </div>
           <div>
             <label class="modal-label" for="">Comment</label>
-            <textarea class="modal-textarea" name="user_comment" placeholder="Text input">Comment</textarea>
+            <textarea
+              class="modal-textarea"
+              name="user_comment"
+              placeholder="Text input"
+            >
+Comment</textarea
+            >
           </div>
           <div class="modal-checkbox">
-            <input class="modal-checkbox-input" type="checkbox"/>
-            <label class="modal-checkbox-label">I accept the terms and conditions of the Privacy Policy</label>
+            <input class="modal-checkbox-input" type="checkbox" />
+            <label class="modal-checkbox-label"
+              >I accept the terms and conditions of the Privacy Policy</label
+            >
           </div>
-          </form>
-        </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
