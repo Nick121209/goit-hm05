@@ -940,8 +940,8 @@ button {
   position: relative;
 }
 
-.modal-input:focus .modal-input-icon {
-  fill: var(--primary-color);
+.modal-input:focus + .modal-input-icon {
+  fill: #4d5ae5;
 }
 
 .modal-checkbox {
@@ -969,7 +969,7 @@ button {
   fill: transparent;
 }
 
-.modal-checkbox-input:checked + .icon-container {
+.modal-checkbox-input:checked + .modal-checkbox-label > .icon-container {
   background-color: var(--focushover-color);
   border: none;
   fill: var(--button-background-color);
